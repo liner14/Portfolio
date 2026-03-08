@@ -11,7 +11,7 @@
 
 **A modern, animated developer portfolio built with React, Material UI, and Framer Motion.**
 
-[View Live](#) · [GitHub Profile](https://github.com/liner14) · [Report Bug](https://github.com/liner14/Portfolio/issues)
+[View Live](https://l1ner.netlify.app/) · [GitHub Profile](https://github.com/liner14) · [Report Bug](https://github.com/liner14/Portfolio/issues)
 
 </div>
 
