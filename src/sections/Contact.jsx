@@ -43,7 +43,7 @@ const Contact = ({ darkMode }) => {
       // 1. Prepare data for Web3Forms
       const payload = new FormData();
       // ⚠️ Replace this with your actual Web3Forms access key from web3forms.com
-      payload.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY_HERE");
+      payload.append("access_key", "000eaa34-f9e5-4573-a95c-5502e1051408");
       payload.append("name", formData.name);
       payload.append("email", formData.email);
       payload.append("message", formData.message);
