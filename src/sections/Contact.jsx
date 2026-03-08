@@ -40,31 +40,32 @@ const Contact = ({ darkMode }) => {
     setSending(true);
 
     try {
-      // 1. Prepare data for Web3Forms
-      const payload = new FormData();
-      // ⚠️ Replace this with your actual Web3Forms access key from web3forms.com
-      payload.append("access_key", "000eaa34-f9e5-4573-a95c-5502e1051408");
-      payload.append("name", formData.name);
-      payload.append("email", formData.email);
-      payload.append("message", formData.message);
-
-      // 2. Send POST request to Web3Forms API
+      // Send POST request to Web3Forms API using JSON
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: payload,
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "000eaa34-f9e5-4573-a95c-5502e1051408",
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
       });
       
       const data = await response.json();
 
-      // 3. Handle success or error
-      if (data.success) {
+      if (response.status === 200 && data.success) {
         toast.success("Message sent! I'll get back to you soon 🎉");
         setFormData({ name: "", email: "", message: "" });
       } else {
-        toast.error("Failed to send message. Please try again.");
+        toast.error(data.message || "Failed to send message. Please verify your access key.");
       }
     } catch (error) {
-      toast.error("Network error. Could not send message.");
+      console.error("Web3Forms Error:", error);
+      toast.error("Network error. Could not connect to the form service.");
     } finally {
       setSending(false);
     }

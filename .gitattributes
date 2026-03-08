@@ -1,0 +1,4 @@
+# Override GitHub Linguist language detection
+# Classify .jsx files as React (JSX) instead of JavaScript
+*.jsx linguist-language=React
+*.js linguist-language=React
