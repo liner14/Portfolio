@@ -84,7 +84,7 @@ export const projects = [
     id: 3,
     title: "Portfolio Website",
     description:
-      "🚀 A modern, animated developer portfolio built with React, Vite, Material UI (MUI v6), and Framer Motion. Features a typing animation hero, scroll-triggered Framer Motion reveals, MUI Chip project filters, animated LinearProgress skill bars, dark/light mode toggle, mobile-responsive MUI Drawer navigation, and a contact form with MUI TextField. Source at github.com/liner14/Portfolio.",
+      "🚀 My personal developer portfolio — built with React 19, Vite, Material UI (MUI v6) & Framer Motion. Ships with a typewriter hero animation, animated gradient orbs, MUI AppBar + mobile Drawer navbar, filterable project cards with Chip tags, gradient LinearProgress skill bars, persistent dark/light theme, and an MUI TextField contact form. Hosted on GitHub at liner14/Portfolio.",
     techStack: ["React", "Vite", "Tailwind CSS", "MUI", "Framer Motion"],
     github: "https://github.com/liner14/Portfolio",
     demo: "https://github.com/liner14/Portfolio",
