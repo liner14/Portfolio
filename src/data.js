@@ -17,7 +17,7 @@ export const navLinks = [
 // Social profile links
 export const socialLinks = {
   github: "https://github.com/liner14",
-  linkedin: "https://linkedin.com/in/akash",
+  linkedin: "https://www.linkedin.com/in/akash-maity-4b3193277",
 };
 
 // About section content

@@ -31,18 +31,43 @@ const Contact = ({ darkMode }) => {
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       toast.error("Please fill in all fields.");
       return;
     }
     setSending(true);
-    setTimeout(() => {
-      toast.success("Message sent! I'll get back to you soon 🎉");
-      setFormData({ name: "", email: "", message: "" });
+
+    try {
+      // 1. Prepare data for Web3Forms
+      const payload = new FormData();
+      // ⚠️ Replace this with your actual Web3Forms access key from web3forms.com
+      payload.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY_HERE");
+      payload.append("name", formData.name);
+      payload.append("email", formData.email);
+      payload.append("message", formData.message);
+
+      // 2. Send POST request to Web3Forms API
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: payload,
+      });
+      
+      const data = await response.json();
+
+      // 3. Handle success or error
+      if (data.success) {
+        toast.success("Message sent! I'll get back to you soon 🎉");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        toast.error("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      toast.error("Network error. Could not send message.");
+    } finally {
       setSending(false);
-    }, 1200);
+    }
   };
 
   const fieldSx = {
