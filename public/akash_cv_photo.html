@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash Maity – CV</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 11pt;
+      color: #111;
+      background: #fff;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 10mm 16mm 8mm 16mm;
+      background: #fff;
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 7px;
+    }
+    .header-left { flex: 1; }
+    .header-left h1 {
+      font-size: 22pt;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px 14px;
+      font-size: 9.5pt;
+      align-items: center;
+    }
+    .contact-row span, .contact-row a {
+      display: flex; align-items: center; gap: 3px;
+      color: #111; text-decoration: none;
+    }
+    .contact-row a:hover { text-decoration: underline; }
+    .header-right { margin-left: 14px; }
+    .header-right img {
+      width: 78px; height: 88px;
+      object-fit: cover; object-position: top center;
+      border: 1px solid #555; display: block;
+    }
+
+    /* DIVIDER */
+    hr { border: none; border-top: 1.3px solid #111; margin: 6px 0; }
+
+    /* SECTION TITLE */
+    .section-title {
+      font-size: 10pt; font-weight: 900; letter-spacing: 2px;
+      text-transform: uppercase; margin-bottom: 3px; margin-top: 7px;
+    }
+
+    /* SUMMARY */
+    .summary-text { text-align: justify; line-height: 1.55; }
+
+    /* EDUCATION */
+    .edu-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px; }
+    .edu-degree { font-size: 11pt; font-weight: 700; }
+    .edu-right { font-size: 10.5pt; text-align: right; white-space: nowrap; }
+    .edu-sub { font-size: 10pt; color: #333; margin-top: 1px; }
+
+    /* SKILLS */
+    .skills-list { list-style: disc; padding-left: 18px; line-height: 1.7; }
+    .skills-list li strong { font-weight: 700; }
+
+    /* PROJECTS */
+    .project-item { margin-bottom: 8px; }
+    .project-header { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
+    .project-name { font-size: 11pt; font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase; }
+    .project-link {
+      font-size: 8.5pt; color: #0563C1; text-decoration: none;
+      border: 1px solid #0563C1; padding: 0 4px; border-radius: 2px;
+    }
+    .project-link:hover { background: #0563C1; color: #fff; }
+    .project-desc { margin-top: 2px; line-height: 1.5; padding-left: 14px; text-align: justify; }
+    .project-tech { margin-top: 3px; padding-left: 14px; font-size: 9.5pt; }
+    .project-tech strong { font-weight: 700; }
+    .project-tech .tech-group { display: flex; flex-wrap: wrap; gap: 3px 12px; margin-top: 2px; }
+    .tech-badge {
+      font-size: 8.5pt; font-weight: 700; letter-spacing: 0.5px;
+      text-transform: uppercase; background: #f0f0f0;
+      padding: 1px 5px; border-radius: 2px;
+    }
+
+    /* RESEARCH PAPER */
+    .research-block { text-align: justify; line-height: 1.5; }
+    .research-conference { font-weight: 700; margin-top: 5px; }
+    .research-detail { margin-top: 3px; }
+
+    /* LANGUAGES */
+    .lang-grid { display: flex; flex-wrap: wrap; gap: 8px 40px; }
+    .lang-item { min-width: 80px; }
+    .lang-name { font-size: 10.5pt; font-weight: 700; margin-bottom: 2px; }
+    .lang-level { font-size: 9pt; color: #444; letter-spacing: 0.3px; text-transform: uppercase; }
+    .dots { display: none; }
+
+    /* FOOTER */
+    .footer { display: none; }
+
+    @media print {
+      body { background: #fff; }
+      .page { padding: 9mm 13mm 7mm 13mm; margin: 0; }
+      a { color: #0563C1; }
+      @page { size: A4; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Akash Maity</h1>
+      <div class="contact-row">
+        <span>📍 Madhyamgram, Kolkata</span>
+        <span>📞 +916290469285</span>
+        <a href="mailto:akash.maity067@gmail.com">✉ akash.maity067@gmail.com</a>
+        <span>|</span>
+        <a href="https://github.com/liner14" target="_blank">🔗 GitHub</a>
+        <span>|</span>
+        <a href="https://www.linkedin.com/in/akash-maity-4b3193277" target="_blank">LinkedIn</a>
+        <span>|</span>
+        <span>WhatsApp: 7890394255</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <img src="akashphoto.jpg" alt="Akash Maity" />
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- SUMMARY -->
+  <div class="section-title">Summary</div>
+  <p class="summary-text">
+    Passionate Frontend Developer and B.Tech (IT) student with expertise in React, JavaScript, HTML &amp; CSS, Material UI, and Framer Motion.
+    Aiming to contribute to a dynamic team and drive impactful technological solutions.
+    Active open-source builder on GitHub — <a href="https://github.com/liner14" target="_blank">@liner14</a>.
+  </p>
+
+  <hr />
+
+  <!-- EDUCATION -->
+  <div class="section-title">Education</div>
+  <div class="edu-row">
+    <div>
+      <div class="edu-degree">B.TECH / B.E. – Information Technology</div>
+      <div class="edu-sub">Techno International Newtown &nbsp;|&nbsp; CGPA: 7.23</div>
+    </div>
+    <div class="edu-right">2021 – 2025</div>
+  </div>
+  <div class="edu-row" style="margin-top:3px;">
+    <div>
+      <div class="edu-degree">Higher Secondary (Science) – 73%</div>
+      <div class="edu-sub">Barasat P.C.S Government High School</div>
+    </div>
+    <div class="edu-right">Jan 2015 – Mar 2021</div>
+  </div>
+
+  <hr />
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section-title">Technical Skills</div>
+  <ul class="skills-list">
+    <li><strong>Frontend</strong> – React JS, JavaScript (ES6+), HTML5, CSS3, Material UI (MUI v6), Framer Motion, Tailwind CSS</li>
+    <li><strong>Tools &amp; Platforms</strong> – Git, GitHub, Vite, VS Code, Figma, npm</li>
+    <li><strong>Programming Languages</strong> – JavaScript, Java, Python, SQL &nbsp;|&nbsp; <strong>Soft Skills</strong> – Adaptability, Communication, Time Management</li>
+  </ul>
+
+  <hr />
+
+  <!-- PROJECTS -->
+  <div class="section-title">Projects</div>
+
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-name">● Smart To-Do</span>
+      <a class="project-link" href="https://github.com/liner14/Smart-To-Do" target="_blank">[ GitHub ]</a>
+      <a class="project-link" href="https://liner14.github.io/Smart-To-Do/" target="_blank">[ Live ]</a>
+    </div>
+    <p class="project-desc">Task manager built with vanilla HTML, CSS &amp; JavaScript featuring glassmorphism UI, dark/light toggle, drag-and-drop reordering, priority levels, and persistent localStorage.</p>
+    <div class="project-tech">
+      <strong>Tech:</strong>
+      <div class="tech-group">
+        <span class="tech-badge">HTML</span><span class="tech-badge">CSS</span>
+        <span class="tech-badge">JavaScript</span><span class="tech-badge">LocalStorage API</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-name">● ShopWave – E-Commerce</span>
+      <a class="project-link" href="https://github.com/liner14/E-commerce" target="_blank">[ GitHub ]</a>
+      <a class="project-link" href="https://l1ner-e-commerce.netlify.app/" target="_blank">[ Live ]</a>
+    </div>
+    <p class="project-desc">Responsive e-commerce frontend with React, Material UI &amp; Framer Motion. Features product grid, category filtering, cart system, and smooth page transitions.</p>
+    <div class="project-tech">
+      <strong>Tech:</strong>
+      <div class="tech-group">
+        <span class="tech-badge">React</span><span class="tech-badge">Material UI</span>
+        <span class="tech-badge">Framer Motion</span><span class="tech-badge">JavaScript</span><span class="tech-badge">Vite</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-header">
+      <span class="project-name">● Portfolio Website</span>
+      <a class="project-link" href="https://github.com/liner14/Portfolio" target="_blank">[ GitHub ]</a>
+      <a class="project-link" href="https://l1ner.netlify.app/" target="_blank">[ Live ]</a>
+    </div>
+    <p class="project-desc">Personal developer portfolio with React 19, Vite, MUI v6 &amp; Framer Motion. Includes typewriter hero animation, gradient orbs, filterable projects, skill bars, and dark/light theme.</p>
+    <div class="project-tech">
+      <strong>Tech:</strong>
+      <div class="tech-group">
+        <span class="tech-badge">React</span><span class="tech-badge">Vite</span>
+        <span class="tech-badge">MUI</span><span class="tech-badge">Framer Motion</span><span class="tech-badge">Tailwind CSS</span>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- RESEARCH PAPER -->
+  <div class="section-title">Research Paper</div>
+  <div class="research-block">
+    <p>Ghosh, S., Armogan, Sahil, Sk., Maity, A., Karmakar, K., &amp; Mitra, A. (2025). &ldquo;An approach to detect fake profiles in Social Networks involving an Entropy-based Naive Bayes classifier.&rdquo; Mendeley Data, V1, doi: 10.17632/5bk45pywnz.1</p>
+    <p class="research-conference">ICDAI 2025 &nbsp;|&nbsp; <span style="font-weight:normal;">3rd International Conference on Data Analytics and Insights, Techno International New Town, Kolkata (28–30 Aug 2025)</span></p>
+    <p class="research-detail"><strong>Paper ID:</strong> 213 &nbsp;|&nbsp; <strong>Track:</strong> Optimization Techniques &nbsp;|&nbsp; <strong>Title:</strong> An approach to detect fake profiles in Social Networks involving an Entropy-based Naive Bayes classifier</p>
+  </div>
+
+  <hr />
+
+  <!-- LANGUAGES -->
+  <div class="section-title">Languages</div>
+  <div class="lang-grid">
+    <div class="lang-item">
+      <div class="lang-name">English</div>
+      <div class="lang-level">Professional</div>
+    </div>
+    <div class="lang-item">
+      <div class="lang-name">Bengali</div>
+      <div class="lang-level">Native</div>
+    </div>
+    <div class="lang-item">
+      <div class="lang-name">Hindi</div>
+      <div class="lang-level">Speaking</div>
+    </div>
+    <div class="lang-item">
+      <div class="lang-name">Odia</div>
+      <div class="lang-level">Basic</div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>Updated on March 2025</span>
+    <p class="declaration">I hereby declare that all the details provided above are true to the best of my knowledge.</p>
+  </div>
+
+</div>
+</body>
+</html>

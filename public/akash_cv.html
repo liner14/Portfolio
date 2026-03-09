@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash Maity – CV</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 11.5pt;
+      color: #111;
+      background: #fff;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 18mm 20mm 18mm 20mm;
+      background: #fff;
+    }
+
+    /* ── HEADER ─────────────────────────────────────────── */
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      font-size: 28pt;
+      font-weight: 900;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4px 16px;
+      font-size: 10pt;
+      align-items: center;
+    }
+
+    .contact-row span,
+    .contact-row a {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: #111;
+      text-decoration: none;
+    }
+
+    .contact-row a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── DIVIDER ─────────────────────────────────────────── */
+    hr {
+      border: none;
+      border-top: 1.5px solid #111;
+      margin: 8px 0;
+    }
+
+    /* ── SECTION TITLE ───────────────────────────────────── */
+    .section-title {
+      font-size: 11pt;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      margin-top: 12px;
+    }
+
+    /* ── SUMMARY ─────────────────────────────────────────── */
+    .summary-text {
+      text-align: justify;
+      line-height: 1.55;
+    }
+
+    /* ── EDUCATION ───────────────────────────────────────── */
+    .edu-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-degree {
+      font-size: 11pt;
+      font-weight: 700;
+    }
+
+    .edu-right {
+      font-size: 10.5pt;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .edu-sub {
+      font-size: 10.5pt;
+      color: #333;
+      margin-top: 1px;
+    }
+
+    /* ── SKILLS ──────────────────────────────────────────── */
+    .skills-list {
+      list-style: disc;
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .skills-list li strong {
+      font-weight: 700;
+    }
+
+    /* ── PROJECTS ────────────────────────────────────────── */
+    .project-item {
+      margin-bottom: 12px;
+    }
+
+    .project-header {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .project-name {
+      font-size: 11.5pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .project-link {
+      font-size: 9pt;
+      color: #0563C1;
+      text-decoration: none;
+      border: 1px solid #0563C1;
+      padding: 0 4px;
+      border-radius: 2px;
+    }
+
+    .project-link:hover {
+      background: #0563C1;
+      color: #fff;
+    }
+
+    .project-desc {
+      margin-top: 3px;
+      text-align: justify;
+      line-height: 1.55;
+      padding-left: 16px;
+    }
+
+    .project-tech {
+      margin-top: 5px;
+      padding-left: 16px;
+      font-size: 10pt;
+    }
+
+    .project-tech strong {
+      font-weight: 700;
+    }
+
+    .project-tech .tech-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 14px;
+      margin-top: 2px;
+    }
+
+    .tech-badge {
+      font-size: 9pt;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      background: #f0f0f0;
+      padding: 1px 6px;
+      border-radius: 2px;
+    }
+
+    /* ── RESEARCH PAPER ──────────────────────────────────── */
+    .research-block {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .research-conference {
+      font-weight: 700;
+      margin-top: 6px;
+    }
+
+    .research-detail {
+      margin-top: 3px;
+    }
+
+    /* ── LANGUAGES ───────────────────────────────────────── */
+    .lang-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 40px;
+    }
+
+    .lang-item {
+      min-width: 90px;
+    }
+
+    .lang-name {
+      font-size: 10.5pt;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .lang-level {
+      font-size: 9.5pt;
+      color: #444;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .dots {
+      display: flex;
+      gap: 3px;
+      margin-top: 2px;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      border: 1.5px solid #c00;
+    }
+
+    .dot.filled {
+      background: #c00;
+    }
+
+    /* ── FOOTER ──────────────────────────────────────────── */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 20px;
+      font-size: 9.5pt;
+    }
+
+    .declaration {
+      font-style: italic;
+      color: #444;
+      font-size: 9pt;
+      max-width: 340px;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { padding: 14mm 16mm; }
+      a { color: #0563C1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ── HEADER ── -->
+    <div class="header">
+      <h1>Akash Maity</h1>
+      <div class="contact-row">
+        <span>📍 Barasat, Kolkata</span>
+        <span>📞 +916290469285</span>
+        <a href="mailto:akash.maity067@gmail.com">✉ akash.maity067@gmail.com</a>
+        <span>|</span>
+        <a href="https://github.com/liner14" target="_blank">🔗 GitHub</a>
+        <span>|</span>
+        <a href="https://www.linkedin.com/in/akash-maity-4b3193277" target="_blank">LinkedIn</a>
+        <span>|</span>
+        <span>WhatsApp: 7890394255</span>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ── SUMMARY ── -->
+    <div class="section-title">Summary</div>
+    <p class="summary-text">
+      Passionate Frontend Developer and B.Tech student in Information Technology with a strong focus on building beautiful,
+      performant, and accessible web experiences. Proficient in React, JavaScript, HTML &amp; CSS, Material UI, and Framer
+      Motion. Aiming to leverage technical skills to contribute to a dynamic team and drive impactful technological solutions.
+      Active open-source builder on GitHub &mdash; <a href="https://github.com/liner14" target="_blank">@liner14</a>.
+    </p>
+
+    <hr />
+
+    <!-- ── EDUCATION ── -->
+    <div class="section-title">Education</div>
+
+    <div class="edu-row" style="margin-bottom:6px;">
+      <div>
+        <div class="edu-degree">B.TECH / B.E.</div>
+        <div class="edu-sub">Information Technology</div>
+        <div class="edu-sub">CGPA: 7.23</div>
+      </div>
+      <div class="edu-right">
+        Techno International Newtown &nbsp;|&nbsp; 2021 – 2025
+      </div>
+    </div>
+
+    <div class="edu-row">
+      <div>
+        <div class="edu-degree">Higher Secondary (Science)</div>
+        <div class="edu-sub">Barasat P.C.S Government High School</div>
+        <div class="edu-sub">73%</div>
+      </div>
+      <div class="edu-right">
+        Jan 2015 – Mar 2021
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ── TECHNICAL SKILLS ── -->
+    <div class="section-title">Technical Skills</div>
+    <ul class="skills-list">
+      <li><strong>Frontend</strong> – React JS, JavaScript (ES6+), HTML5, CSS3, Material UI (MUI v6), Framer Motion, Tailwind CSS</li>
+      <li><strong>Tools &amp; Platforms</strong> – Git, GitHub, Vite, VS Code, Figma, npm</li>
+      <li><strong>Programming Languages</strong> – JavaScript, Java, Python, SQL</li>
+      <li><strong>Soft Skills</strong> – Adaptability, Communication, Time Management, Problem Solving</li>
+    </ul>
+
+    <hr />
+
+    <!-- ── PROJECTS ── -->
+    <div class="section-title">Projects</div>
+
+    <!-- Project 1: Smart To-Do -->
+    <div class="project-item">
+      <div class="project-header">
+        <span class="project-name">● Smart To-Do</span>
+        <a class="project-link" href="https://github.com/liner14/Smart-To-Do" target="_blank">[ GitHub ]</a>
+        <a class="project-link" href="https://liner14.github.io/Smart-To-Do/" target="_blank">[ Live ]</a>
+      </div>
+      <p class="project-desc">
+        A modern Task Manager built entirely with vanilla HTML, CSS, and JavaScript &mdash; no frameworks, no dependencies.
+        Features a stunning glassmorphism UI, dark/light theme toggle, drag-and-drop task reordering, priority levels
+        (High / Medium / Low), task filtering, search functionality, and persistent local storage so tasks survive page refreshes.
+      </p>
+      <div class="project-tech">
+        <strong>Technology Used:</strong>
+        <div class="tech-group">
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">LocalStorage API</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: ShopWave E-Commerce -->
+    <div class="project-item">
+      <div class="project-header">
+        <span class="project-name">● ShopWave – E-Commerce Website</span>
+        <a class="project-link" href="https://github.com/liner14/E-commerce" target="_blank">[ GitHub ]</a>
+        <a class="project-link" href="https://l1ner-e-commerce.netlify.app/" target="_blank">[ Live ]</a>
+      </div>
+      <p class="project-desc">
+        A sleek, responsive mini e-commerce frontend built with React, Material UI, and Framer Motion. Features a modern product
+        grid, dynamic category filtering, search functionality, a fully functional cart system with quantity management, smooth
+        animated page transitions, and a polished responsive shopping experience deployed on Netlify.
+      </p>
+      <div class="project-tech">
+        <strong>Technology Used:</strong>
+        <div class="tech-group">
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Material UI</span>
+          <span class="tech-badge">Framer Motion</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">Vite</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: Portfolio Website -->
+    <div class="project-item">
+      <div class="project-header">
+        <span class="project-name">● Portfolio Website</span>
+        <a class="project-link" href="https://github.com/liner14/Portfolio" target="_blank">[ GitHub ]</a>
+        <a class="project-link" href="https://l1ner.netlify.app/" target="_blank">[ Live ]</a>
+      </div>
+      <p class="project-desc">
+        A personal developer portfolio built with React 19, Vite, Material UI (MUI v6), and Framer Motion. Features a typewriter
+        hero animation, animated gradient orbs, MUI AppBar with mobile Drawer navbar, filterable project cards with Chip tags,
+        gradient LinearProgress skill bars, persistent dark/light theme toggle, and an MUI TextField contact form. Hosted live
+        on Netlify.
+      </p>
+      <div class="project-tech">
+        <strong>Technology Used:</strong>
+        <div class="tech-group">
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Vite</span>
+          <span class="tech-badge">MUI</span>
+          <span class="tech-badge">Framer Motion</span>
+          <span class="tech-badge">Tailwind CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ── RESEARCH PAPER ── -->
+    <div class="section-title">Research Paper</div>
+    <div class="research-block">
+      <p>
+        Ghosh, S., Armogan, Sahil, Sk., Maity, A., Karmakar, K., &amp; Mitra, A. (2025). Data set to paper &ldquo;An approach
+        to detect fake profiles in Social Networks involving an Entropy-based Naive Bayes classifier.&rdquo;, Mendeley Data,
+        V1, doi: 10.17632/5bk45pywnz.1
+      </p>
+      <p class="research-conference">ICDAI 2025</p>
+      <p class="research-detail">
+        The 3rd International Conference on Data Analytics and Insights (ICDAI 2025), organized by Techno International New
+        Town, Kolkata, from 28th to 30th August 2025.
+      </p>
+      <p class="research-detail">
+        <strong>Paper ID:</strong> 213 &nbsp;|&nbsp;
+        <strong>Track:</strong> Optimization Techniques<br />
+        <strong>Title:</strong> An approach to detect fake profiles in Social Networks involving an Entropy-based Naive Bayes classifier
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- ── LANGUAGES ── -->
+    <div class="section-title">Languages</div>
+    <div class="lang-grid">
+      <div class="lang-item">
+        <div class="lang-name">English</div>
+        <div class="lang-level">Professional</div>
+        <div class="dots">
+          <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+          <div class="dot filled"></div><div class="dot filled"></div>
+        </div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-name">Bengali</div>
+        <div class="lang-level">Native</div>
+        <div class="dots">
+          <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+          <div class="dot filled"></div><div class="dot filled"></div>
+        </div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-name">Hindi</div>
+        <div class="lang-level">Speaking</div>
+        <div class="dots">
+          <div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div>
+          <div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-name">Odia</div>
+        <div class="lang-level">Basic</div>
+        <div class="dots">
+          <div class="dot filled"></div><div class="dot"></div><div class="dot"></div>
+          <div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- ── FOOTER ── -->
+    <div class="footer">
+      <span>Updated on March 2025</span>
+      <p class="declaration">I hereby declare that all the details provided above are true to the best of my knowledge.</p>
+    </div>
+
+  </div>
+</body>
+</html>
